@@ -1,0 +1,377 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\simulator\\wearablesimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:simulator\\wearablesimulator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\services\\measurementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:services\\measurementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\services\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:services\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\models\\measurement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:models\\measurement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\models\\aianalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:models\\aianalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\fhir\\fhirobservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:fhir\\fhirobservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\dto\\measurementhistoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:dto\\measurementhistoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\dto\\aipredictionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:dto\\aipredictionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\dto\\aipredictionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:dto\\aipredictionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\data\\smartblooddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:data\\smartblooddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:controllers\\patientscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\controllers\\measurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:controllers\\measurementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\migrations\\smartblooddbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:migrations\\smartblooddbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|c:\\users\\vinic\\desktop\\smartblood2\\smartblood\\ia\\app.py||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{BD5FF5C8-3E18-EC08-C4C2-240FFF7D2B43}|SmartBlood.csproj|solutionrelative:ia\\app.py||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 16,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AIController.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Controllers\\AIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AIController.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Controllers\\AIController.cs",
+              "RelativeToolTip": "Controllers\\AIController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T22:05:14.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\wwwroot\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\style.css",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\wwwroot\\style.css",
+              "RelativeToolTip": "wwwroot\\style.css",
+              "ViewState": "AgIAABQBAAAAAAAAAAAiwBUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-23T21:55:37.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-11-23T21:55:19.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MeasurementHistoryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\DTO\\MeasurementHistoryResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\MeasurementHistoryResponse.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\DTO\\MeasurementHistoryResponse.cs",
+              "RelativeToolTip": "DTO\\MeasurementHistoryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T21:40:52.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AIAnalysis.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Models\\AIAnalysis.cs",
+              "RelativeDocumentMoniker": "Models\\AIAnalysis.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Models\\AIAnalysis.cs",
+              "RelativeToolTip": "Models\\AIAnalysis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T21:35:33.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SmartBloodDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Migrations\\SmartBloodDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\SmartBloodDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Migrations\\SmartBloodDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\SmartBloodDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAiwJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T21:34:54.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "app.py",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\IA\\app.py",
+              "RelativeDocumentMoniker": "IA\\app.py",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\IA\\app.py",
+              "RelativeToolTip": "IA\\app.py",
+              "ViewState": "AgIAADEAAAAAAAAAAAAiwEEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-11-23T21:20:33.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AIService.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Services\\AIService.cs",
+              "RelativeDocumentMoniker": "Services\\AIService.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Services\\AIService.cs",
+              "RelativeToolTip": "Services\\AIService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T21:15:52.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AIPredictionResponse.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\DTO\\AIPredictionResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\AIPredictionResponse.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\DTO\\AIPredictionResponse.cs",
+              "RelativeToolTip": "DTO\\AIPredictionResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T00:52:32.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AIPredictionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\DTO\\AIPredictionRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\AIPredictionRequest.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\DTO\\AIPredictionRequest.cs",
+              "RelativeToolTip": "DTO\\AIPredictionRequest.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T00:52:11.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PatientsController.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Controllers\\PatientsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientsController.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Controllers\\PatientsController.cs",
+              "RelativeToolTip": "Controllers\\PatientsController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAmwE8AAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T00:50:06.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "Services\\PatientService.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Services\\PatientService.cs",
+              "RelativeToolTip": "Services\\PatientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T00:49:54.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T00:48:10.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FhirObservationService.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\FHIR\\FhirObservationService.cs",
+              "RelativeDocumentMoniker": "FHIR\\FhirObservationService.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\FHIR\\FhirObservationService.cs",
+              "RelativeToolTip": "FHIR\\FhirObservationService.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAwwK8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T00:17:09.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WearableSimulator.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Simulator\\WearableSimulator.cs",
+              "RelativeDocumentMoniker": "Simulator\\WearableSimulator.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Simulator\\WearableSimulator.cs",
+              "RelativeToolTip": "Simulator\\WearableSimulator.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowE8AAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-29T00:04:13.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-28T23:47:32.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAqwEAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T23:46:20.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SmartBloodDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Data\\SmartBloodDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\SmartBloodDbContext.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Data\\SmartBloodDbContext.cs",
+              "RelativeToolTip": "Data\\SmartBloodDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T23:44:46.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Measurement.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Models\\Measurement.cs",
+              "RelativeDocumentMoniker": "Models\\Measurement.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Models\\Measurement.cs",
+              "RelativeToolTip": "Models\\Measurement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T23:44:03.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MeasurementService.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Services\\MeasurementService.cs",
+              "RelativeDocumentMoniker": "Services\\MeasurementService.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Services\\MeasurementService.cs",
+              "RelativeToolTip": "Services\\MeasurementService.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAYwNMAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T23:43:53.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MeasurementsController.cs",
+              "DocumentMoniker": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Controllers\\MeasurementsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MeasurementsController.cs",
+              "ToolTip": "C:\\Users\\vinic\\Desktop\\SmartBlood2\\SmartBlood\\Controllers\\MeasurementsController.cs",
+              "RelativeToolTip": "Controllers\\MeasurementsController.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwG4AAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-28T23:42:40.561Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

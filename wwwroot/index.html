@@ -1,0 +1,186 @@
+﻿
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartBlood - Monitoramento Inteligente</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <div>
+                <h1>SmartBlood</h1>
+                <p>Monitoramento Inteligente</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Consulta do paciente -->
+        <section class="panel">
+
+            <h2>Dashboard do paciente</h2>
+
+            <div class="search-container">
+
+                <div class="input-group">
+                    <label for="patientId">ID do paciente</label>
+
+                    <input
+                        type="number"
+                        id="patientId"
+                        value="1"
+                        min="1"
+                    >
+                </div>
+
+                <button onclick="loadDashboard()">
+                    Consultar
+                </button>
+
+            </div>
+
+            <p id="message" class="message"></p>
+
+        </section>
+
+
+        <!-- Indicadores principais -->
+        <section class="cards">
+
+            <div class="card">
+                <h3>Pressão arterial</h3>
+
+                <div class="card-value">
+                    <span id="bloodPressure">--/--</span>
+                </div>
+
+                <span class="card-unit">mmHg</span>
+            </div>
+
+
+            <div class="card">
+                <h3>Frequência cardíaca</h3>
+
+                <div class="card-value">
+                    <span id="heartRate">--</span>
+                </div>
+
+                <span class="card-unit">bpm</span>
+            </div>
+
+
+            <div class="card">
+                <h3>Classificação da IA</h3>
+
+                <div class="card-value">
+                    <span id="classification">--</span>
+                </div>
+
+                <span class="card-unit" id="analysisDate">
+                    Aguardando análise
+                </span>
+            </div>
+
+        </section>
+
+
+        <!-- Probabilidades da IA -->
+        <section class="panel">
+
+            <h2>Probabilidades da IA</h2>
+
+            <div id="probabilities">
+                Aguardando análise...
+            </div>
+
+        </section>
+
+
+        <!-- Histórico -->
+        <section class="panel">
+
+            <h2>Histórico de medições</h2>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Sistólica</th>
+                            <th>Diastólica</th>
+                            <th>Frequência cardíaca</th>
+                            <th>Classificação</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="history">
+
+                        <tr>
+                            <td colspan="5">
+                                Nenhuma medição carregada.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- Gráficos -->
+        <section class="charts">
+
+            <div class="panel">
+
+                <h2>Evolução da pressão arterial</h2>
+
+                <div class="chart-container">
+                    <canvas id="bloodPressureChart"></canvas>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h2>Evolução da frequência cardíaca</h2>
+
+                <div class="chart-container">
+                    <canvas id="heartRateChart"></canvas>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>SmartBlood - Monitoramento Inteligente de Saúde</p>
+    </footer>
+
+
+    <!-- Biblioteca dos gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JavaScript do dashboard -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
