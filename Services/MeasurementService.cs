@@ -16,7 +16,7 @@ namespace SmartBlood.Services
             _aiService = aiService;
         }
 
-        public async Task<object> CreateMeasurement(     Measurement measurement,     CancellationToken cancellationToken = default)
+        public async Task<object> CreateMeasurement(Measurement measurement, CancellationToken cancellationToken = default)
         {
             if (measurement == null)
                 throw new ArgumentException("Os dados da medição são obrigatórios.");
@@ -36,10 +36,10 @@ namespace SmartBlood.Services
             if (measurement.HeartRate < 20 || measurement.HeartRate > 250)
                 throw new ArgumentException("A frequência cardíaca deve estar entre 20 e 250 bpm.");
 
-            var patient = await _context.Patients                .FirstOrDefaultAsync(                    x => x.Id == measurement.PatientId,                    cancellationToken                );
+            var patient = await _context.Patients.FirstOrDefaultAsync(x => x.Id == measurement.PatientId, cancellationToken);
 
             if (patient == null)
-                throw new KeyNotFoundException(                    $"Paciente {measurement.PatientId} não encontrado."                );
+                throw new KeyNotFoundException($"Paciente {measurement.PatientId} não encontrado.");
 
             if (measurement.Timestamp == default)
                 measurement.Timestamp = DateTime.UtcNow;
@@ -66,7 +66,7 @@ namespace SmartBlood.Services
 
             try
             {
-                var prediction = await _aiService.PredictAsync(                    request,                    cancellationToken                );
+                var prediction = await _aiService.PredictAsync(request, cancellationToken);
 
                 if (prediction == null)
                 {
@@ -126,7 +126,7 @@ namespace SmartBlood.Services
 
         public List<Measurement> GetMeasurements()
         {
-            return _context.Measurements                .OrderByDescending(x => x.Timestamp)                .ToList();
+            return _context.Measurements.OrderByDescending(x => x.Timestamp).ToList();
         }
 
         public Measurement? GetMeasurementById(int id)
@@ -134,12 +134,12 @@ namespace SmartBlood.Services
             return _context.Measurements.FirstOrDefault(x => x.Id == id);
         }
 
-        public async Task<bool> PatientExistsAsync(    int patientId,    CancellationToken cancellationToken = default)
+        public async Task<bool> PatientExistsAsync(int patientId, CancellationToken cancellationToken = default)
         {
-            return await _context.Patients                .AnyAsync(x => x.Id == patientId, cancellationToken);
+            return await _context.Patients.AnyAsync(x => x.Id == patientId, cancellationToken);
         }
 
-        public async Task<List<MeasurementHistoryResponse>> GetMeasurementsByPatientAsync(            int patientId,            CancellationToken cancellationToken = default)
+        public async Task<List<MeasurementHistoryResponse>> GetMeasurementsByPatientAsync(int patientId, CancellationToken cancellationToken = default)
         {
             var measurements = await _context.Measurements
                 .AsNoTracking()
@@ -152,7 +152,7 @@ namespace SmartBlood.Services
             return measurements.Select(MapMeasurementHistory).ToList();
         }
 
-        public async Task<MeasurementHistoryResponse?> GetMeasurementWithAnalysisAsync(            int id,            CancellationToken cancellationToken = default)
+        public async Task<MeasurementHistoryResponse?> GetMeasurementWithAnalysisAsync(int id, CancellationToken cancellationToken = default)
         {
             var measurement = await _context.Measurements
                 .AsNoTracking()
@@ -165,7 +165,7 @@ namespace SmartBlood.Services
             return MapMeasurementHistory(measurement);
         }
 
-        public async Task<MeasurementHistoryResponse?> GetLatestMeasurementByPatientAsync(            int patientId,            CancellationToken cancellationToken = default)
+        public async Task<MeasurementHistoryResponse?> GetLatestMeasurementByPatientAsync(int patientId, CancellationToken cancellationToken = default)
         {
             var measurement = await _context.Measurements
                 .AsNoTracking()
@@ -181,7 +181,7 @@ namespace SmartBlood.Services
             return MapMeasurementHistory(measurement);
         }
 
-        private static MeasurementHistoryResponse MapMeasurementHistory(            Measurement measurement)
+        private static MeasurementHistoryResponse MapMeasurementHistory(Measurement measurement)
         {
             return new MeasurementHistoryResponse
             {
@@ -209,7 +209,7 @@ namespace SmartBlood.Services
             };
         }
 
-        public async Task<Measurement?> GetLatestMeasurementForFhirAsync(    int patientId,    CancellationToken cancellationToken = default)
+        public async Task<Measurement?> GetLatestMeasurementForFhirAsync(int patientId, CancellationToken cancellationToken = default)
         {
             return await _context.Measurements
                 .AsNoTracking()
