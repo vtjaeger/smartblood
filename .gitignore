@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# .NET
+bin/
+obj/
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# Temporários
+*.tmp
+*.cache
