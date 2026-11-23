@@ -77,7 +77,7 @@ namespace SmartBlood.Controllers
             if (measurement == null)
                 return NotFound(new { error = "Nenhuma medição encontrada para este paciente." });
 
-            var bundle = _fhirObservationService.CreatePatientBundle(                patient,                measurement            );
+            var bundle = _fhirObservationService.CreatePatientBundle(patient, measurement);
 
             var serializer = new FhirJsonSerializer();
             var json = serializer.SerializeToString(bundle);

@@ -10,7 +10,7 @@ namespace SmartBlood.Simulator
         private readonly ILogger<WearableSimulator> _logger;
         private readonly Random _random = new Random();
 
-        public WearableSimulator(            IHttpClientFactory httpClientFactory,            IConfiguration configuration,            ILogger<WearableSimulator> logger)
+        public WearableSimulator(IHttpClientFactory httpClientFactory, IConfiguration configuration, ILogger<WearableSimulator> logger)
         {
             _httpClientFactory = httpClientFactory;
             _configuration = configuration;
@@ -19,15 +19,15 @@ namespace SmartBlood.Simulator
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            var apiBaseUrl = _configuration["WearableSimulator:ApiBaseUrl"]                ?? "http://localhost:5109/";
+            var apiBaseUrl = _configuration["WearableSimulator:ApiBaseUrl"] ?? "http://localhost:5109/";
 
             var patientId = _configuration.GetValue<int>("WearableSimulator:PatientId", 1);
             var deviceId = _configuration["WearableSimulator:DeviceId"] ?? "wrist-04a7";
-            var intervalSeconds = _configuration.GetValue<int>(               "WearableSimulator:IntervalSeconds",                5            );
+            var intervalSeconds = _configuration.GetValue<int>("WearableSimulator:IntervalSeconds", 5);
 
             if (!Uri.TryCreate(apiBaseUrl, UriKind.Absolute, out var baseUri))
             {
-                _logger.LogError(                    "URL inválida para o simulador IoT: {ApiBaseUrl}",                    apiBaseUrl                );
+                _logger.LogError("URL inválida para o simulador IoT: {ApiBaseUrl}", apiBaseUrl);
                 return;
             }
 
@@ -46,7 +46,7 @@ namespace SmartBlood.Simulator
             httpClient.BaseAddress = baseUri;
             httpClient.Timeout = TimeSpan.FromSeconds(10);
 
-            _logger.LogInformation(                "Simulador IoT iniciado. API: {ApiBaseUrl} | Paciente: {PatientId} | Dispositivo: {DeviceId}",                apiBaseUrl,                patientId,                deviceId            );
+            _logger.LogInformation("Simulador IoT iniciado. API: {ApiBaseUrl} | Paciente: {PatientId} | Dispositivo: {DeviceId}", apiBaseUrl, patientId, deviceId);
 
             while (!stoppingToken.IsCancellationRequested)
             {
@@ -62,22 +62,22 @@ namespace SmartBlood.Simulator
 
                 try
                 {
-                    var response = await httpClient.PostAsJsonAsync(                        "api/measurements",                        measurement,                        stoppingToken                    );
+                    var response = await httpClient.PostAsJsonAsync("api/measurements", measurement, stoppingToken);
 
                     response.EnsureSuccessStatusCode();
 
-                    _logger.LogInformation(                        "Medição enviada: {Systolic}/{Diastolic} mmHg | {HeartRate} bpm | HTTP {StatusCode}",                        measurement.Systolic,                        measurement.Diastolic,                        measurement.HeartRate,                        response.StatusCode                    );
+                    _logger.LogInformation("Medição enviada: {Systolic}/{Diastolic} mmHg | {HeartRate} bpm | HTTP {StatusCode}", measurement.Systolic, measurement.Diastolic, measurement.HeartRate, response.StatusCode);
                 }
                 catch (HttpRequestException ex)
                 {
-                    _logger.LogError(                        ex,                        "Falha ao enviar medição do dispositivo {DeviceId}. Verifique se a API está disponível e se o paciente {PatientId} existe.",                        deviceId,                        patientId                    );
+                    _logger.LogError(ex, "Falha ao enviar medição do dispositivo {DeviceId}. Verifique se a API está disponível e se o paciente {PatientId} existe.", deviceId, patientId);
                 }
                 catch (TaskCanceledException) when (!stoppingToken.IsCancellationRequested)
                 {
-                    _logger.LogWarning(                        "Tempo limite ao enviar medição do dispositivo {DeviceId}.",                        deviceId                    );
+                    _logger.LogWarning("Tempo limite ao enviar medição do dispositivo {DeviceId}.", deviceId);
                 }
 
-                await Task.Delay(                    TimeSpan.FromSeconds(intervalSeconds),                    stoppingToken                );
+                await Task.Delay(TimeSpan.FromSeconds(intervalSeconds), stoppingToken);
             }
         }
     }

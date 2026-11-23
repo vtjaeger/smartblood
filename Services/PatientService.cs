@@ -22,12 +22,12 @@ namespace SmartBlood.Services
 
         public List<Patient> GetPatients()
         {
-            return _context.Patients                .OrderBy(p => p.Id)                .ToList();
+            return _context.Patients.OrderBy(p => p.Id).ToList();
         }
 
         public Patient? GetPatientById(int id)
         {
-            return _context.Patients                .FirstOrDefault(p => p.Id == id);
+            return _context.Patients.FirstOrDefault(p => p.Id == id);
         }
     }
 }
