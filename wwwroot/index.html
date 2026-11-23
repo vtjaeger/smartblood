@@ -1,14 +1,13 @@
-﻿
-<!DOCTYPE html>
-<html lang="pt-BR">
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SmartBlood - Monitoramento Inteligente</title>
+    <title>SmartBlood - Intelligent Health Monitoring</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
@@ -17,22 +16,22 @@
         <div class="header-content">
             <div>
                 <h1>SmartBlood</h1>
-                <p>Monitoramento Inteligente</p>
+                <p>Intelligent Health Monitoring</p>
             </div>
         </div>
     </header>
 
     <main class="container">
 
-        <!-- Consulta do paciente -->
+        <!-- Patient Dashboard -->
         <section class="panel">
 
-            <h2>Dashboard do paciente</h2>
+            <h2>Patient Dashboard</h2>
 
             <div class="search-container">
 
                 <div class="input-group">
-                    <label for="patientId">ID do paciente</label>
+                    <label for="patientId">Patient ID</label>
 
                     <input
                         type="number"
@@ -43,7 +42,7 @@
                 </div>
 
                 <button onclick="loadDashboard()">
-                    Consultar
+                    Search
                 </button>
 
             </div>
@@ -53,11 +52,11 @@
         </section>
 
 
-        <!-- Indicadores principais -->
+        <!-- Main Health Indicators -->
         <section class="cards">
 
             <div class="card">
-                <h3>Pressão arterial</h3>
+                <h3>Blood Pressure</h3>
 
                 <div class="card-value">
                     <span id="bloodPressure">--/--</span>
@@ -68,7 +67,7 @@
 
 
             <div class="card">
-                <h3>Frequência cardíaca</h3>
+                <h3>Heart Rate</h3>
 
                 <div class="card-value">
                     <span id="heartRate">--</span>
@@ -79,36 +78,36 @@
 
 
             <div class="card">
-                <h3>Classificação da IA</h3>
+                <h3>AI Classification</h3>
 
                 <div class="card-value">
                     <span id="classification">--</span>
                 </div>
 
                 <span class="card-unit" id="analysisDate">
-                    Aguardando análise
+                    Awaiting analysis
                 </span>
             </div>
 
         </section>
 
 
-        <!-- Probabilidades da IA -->
+        <!-- AI Probabilities -->
         <section class="panel">
 
-            <h2>Probabilidades da IA</h2>
+            <h2>AI Probabilities</h2>
 
             <div id="probabilities">
-                Aguardando análise...
+                Awaiting analysis...
             </div>
 
         </section>
 
 
-        <!-- Histórico -->
+        <!-- Measurement History -->
         <section class="panel">
 
-            <h2>Histórico de medições</h2>
+            <h2>Measurement History</h2>
 
             <div class="table-container">
 
@@ -116,11 +115,11 @@
 
                     <thead>
                         <tr>
-                            <th>Data</th>
-                            <th>Sistólica</th>
-                            <th>Diastólica</th>
-                            <th>Frequência cardíaca</th>
-                            <th>Classificação</th>
+                            <th>Date</th>
+                            <th>Systolic</th>
+                            <th>Diastolic</th>
+                            <th>Heart Rate</th>
+                            <th>Classification</th>
                         </tr>
                     </thead>
 
@@ -128,7 +127,7 @@
 
                         <tr>
                             <td colspan="5">
-                                Nenhuma medição carregada.
+                                No measurements loaded.
                             </td>
                         </tr>
 
@@ -141,12 +140,12 @@
         </section>
 
 
-        <!-- Gráficos -->
+        <!-- Charts -->
         <section class="charts">
 
             <div class="panel">
 
-                <h2>Evolução da pressão arterial</h2>
+                <h2>Blood Pressure Trends</h2>
 
                 <div class="chart-container">
                     <canvas id="bloodPressureChart"></canvas>
@@ -157,7 +156,7 @@
 
             <div class="panel">
 
-                <h2>Evolução da frequência cardíaca</h2>
+                <h2>Heart Rate Trends</h2>
 
                 <div class="chart-container">
                     <canvas id="heartRateChart"></canvas>
@@ -171,14 +170,14 @@
 
 
     <footer class="footer">
-        <p>SmartBlood - Monitoramento Inteligente de Saúde</p>
+        <p>SmartBlood - Intelligent Health Monitoring System</p>
     </footer>
 
 
-    <!-- Biblioteca dos gráficos -->
+    <!-- Chart Library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- JavaScript do dashboard -->
+    <!-- Dashboard JavaScript -->
     <script src="js/dashboard.js"></script>
 
 </body>

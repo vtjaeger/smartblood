@@ -1,4 +1,3 @@
-
 const API_URL = "";
 
 let bloodPressureChart = null;
@@ -6,7 +5,7 @@ let heartRateChart = null;
 
 
 // ==========================================
-// CARREGAMENTO DO DASHBOARD
+// DASHBOARD LOADING
 // ==========================================
 
 async function loadDashboard() {
@@ -15,15 +14,15 @@ async function loadDashboard() {
     const message = document.getElementById("message");
 
     if (!patientId || Number(patientId) <= 0) {
-        message.textContent = "Informe um ID de paciente válido.";
+        message.textContent = "Please enter a valid patient ID.";
         return;
     }
 
-    message.textContent = "Carregando dados...";
+    message.textContent = "Loading data...";
 
     try {
 
-        // Busca a última medição
+        // Fetch the latest measurement
         const latestResponse = await fetch(
             `${API_URL}/api/Measurements/patient/${patientId}/latest`
         );
@@ -32,8 +31,8 @@ async function loadDashboard() {
 
             throw new Error(
                 latestResponse.status === 404
-                    ? "Nenhuma medição encontrada para este paciente."
-                    : "Erro ao consultar a última medição."
+                    ? "No measurements found for this patient."
+                    : "Error retrieving the latest measurement."
             );
 
         }
@@ -41,17 +40,17 @@ async function loadDashboard() {
         const latest = await latestResponse.json();
 
 
-        // Atualiza pressão arterial
+        // Update blood pressure
         document.getElementById("bloodPressure").textContent =
             `${latest.systolic}/${latest.diastolic}`;
 
 
-        // Atualiza frequência cardíaca
+        // Update heart rate
         document.getElementById("heartRate").textContent =
             latest.heartRate;
 
 
-        // Atualiza classificação da IA
+        // Update AI classification
         const analysis = latest.aiAnalysis;
 
         if (analysis) {
@@ -62,26 +61,26 @@ async function loadDashboard() {
             renderProbabilities(analysis.probabilities);
 
             document.getElementById("analysisDate").textContent =
-                "Análise disponível";
+                "Analysis available";
 
         } else {
 
             document.getElementById("classification").textContent =
-                "Indisponível";
+                "Unavailable";
 
             document.getElementById("analysisDate").textContent =
-                "Análise não disponível";
+                "Analysis not available";
 
             document.getElementById("probabilities").textContent =
-                "Não existe análise de IA para esta medição.";
+                "No AI analysis is available for this measurement.";
 
         }
 
 
-        // Busca histórico e atualiza gráficos
+        // Fetch history and update charts
         await loadHistory(patientId);
 
-        message.textContent = "Dados carregados com sucesso!";
+        message.textContent = "Data loaded successfully!";
 
     } catch (error) {
 
@@ -94,7 +93,7 @@ async function loadDashboard() {
 
 
 // ==========================================
-// PROBABILIDADES DA IA
+// AI PROBABILITIES
 // ==========================================
 
 function renderProbabilities(probabilities) {
@@ -105,7 +104,7 @@ function renderProbabilities(probabilities) {
 
     if (!probabilities) {
 
-        container.textContent = "Probabilidades indisponíveis.";
+        container.textContent = "Probabilities unavailable.";
         return;
 
     }
@@ -149,7 +148,7 @@ function renderProbabilities(probabilities) {
 
 
 // ==========================================
-// HISTÓRICO DE MEDIÇÕES
+// MEASUREMENT HISTORY
 // ==========================================
 
 async function loadHistory(patientId) {
@@ -160,7 +159,7 @@ async function loadHistory(patientId) {
 
     if (!response.ok) {
 
-        throw new Error("Erro ao consultar o histórico.");
+        throw new Error("Error retrieving measurement history.");
 
     }
 
@@ -177,7 +176,7 @@ async function loadHistory(patientId) {
         const cell = document.createElement("td");
 
         cell.colSpan = 5;
-        cell.textContent = "Nenhuma medição encontrada.";
+        cell.textContent = "No measurements found.";
 
         row.appendChild(cell);
         tbody.appendChild(row);
@@ -189,20 +188,20 @@ async function loadHistory(patientId) {
     }
 
 
-    // Ordena da mais recente para a mais antiga
+    // Sort measurements from newest to oldest
     const orderedMeasurements = [...measurements].sort(
         (a, b) => new Date(b.timestamp) - new Date(a.timestamp)
     );
 
 
-    // Preenche a tabela
+    // Populate the table
     orderedMeasurements.forEach(item => {
 
-        const date = new Date(item.timestamp).toLocaleString("pt-BR");
+        const date = new Date(item.timestamp).toLocaleString("en-US");
 
         const classification = item.aiAnalysis
             ? item.aiAnalysis.classification
-            : "Sem análise";
+            : "No analysis";
 
         const row = document.createElement("tr");
 
@@ -229,28 +228,28 @@ async function loadHistory(patientId) {
     });
 
 
-    // Seleciona as 10 medições mais recentes
-    // e inverte para exibir em ordem cronológica
+    // Select the 10 most recent measurements
+    // and reverse them to display in chronological order
     const recentMeasurements = orderedMeasurements
         .slice(0, 10)
         .reverse();
 
 
-    // Atualiza os gráficos
+    // Update charts
     updateCharts(recentMeasurements);
 
 }
 
 
 // ==========================================
-// ATUALIZAÇÃO DOS GRÁFICOS
+// CHART UPDATES
 // ==========================================
 
 function updateCharts(measurements) {
 
     const labels = measurements.map(item => {
 
-        return new Date(item.timestamp).toLocaleString("pt-BR", {
+        return new Date(item.timestamp).toLocaleString("en-US", {
             day: "2-digit",
             month: "2-digit",
             hour: "2-digit",
@@ -267,7 +266,7 @@ function updateCharts(measurements) {
 
 
 // ==========================================
-// GRÁFICO DE PRESSÃO ARTERIAL
+// BLOOD PRESSURE CHART
 // ==========================================
 
 function updateBloodPressureChart(measurements, labels) {
@@ -276,14 +275,14 @@ function updateBloodPressureChart(measurements, labels) {
 
     if (!canvas || typeof Chart === "undefined") {
 
-        console.error("Chart.js ou elemento do gráfico não encontrado.");
+        console.error("Chart.js or chart element not found.");
 
         return;
 
     }
 
 
-    // Evita duplicar gráficos
+    // Prevent duplicate charts
     if (bloodPressureChart) {
 
         bloodPressureChart.destroy();
@@ -302,7 +301,7 @@ function updateBloodPressureChart(measurements, labels) {
             datasets: [
 
                 {
-                    label: "Pressão sistólica",
+                    label: "Systolic Blood Pressure",
 
                     data: measurements.map(item => item.systolic),
 
@@ -314,7 +313,7 @@ function updateBloodPressureChart(measurements, labels) {
                 },
 
                 {
-                    label: "Pressão diastólica",
+                    label: "Diastolic Blood Pressure",
 
                     data: measurements.map(item => item.diastolic),
 
@@ -351,7 +350,7 @@ function updateBloodPressureChart(measurements, labels) {
 
                     title: {
                         display: true,
-                        text: "Pressão (mmHg)"
+                        text: "Blood Pressure (mmHg)"
                     }
 
                 },
@@ -360,7 +359,7 @@ function updateBloodPressureChart(measurements, labels) {
 
                     title: {
                         display: true,
-                        text: "Data e horário"
+                        text: "Date and Time"
                     }
 
                 }
@@ -375,7 +374,7 @@ function updateBloodPressureChart(measurements, labels) {
 
 
 // ==========================================
-// GRÁFICO DE FREQUÊNCIA CARDÍACA
+// HEART RATE CHART
 // ==========================================
 
 function updateHeartRateChart(measurements, labels) {
@@ -384,14 +383,14 @@ function updateHeartRateChart(measurements, labels) {
 
     if (!canvas || typeof Chart === "undefined") {
 
-        console.error("Chart.js ou elemento do gráfico não encontrado.");
+        console.error("Chart.js or chart element not found.");
 
         return;
 
     }
 
 
-    // Evita duplicar gráficos
+    // Prevent duplicate charts
     if (heartRateChart) {
 
         heartRateChart.destroy();
@@ -410,7 +409,7 @@ function updateHeartRateChart(measurements, labels) {
             datasets: [
 
                 {
-                    label: "Frequência cardíaca",
+                    label: "Heart Rate",
 
                     data: measurements.map(item => item.heartRate),
 
@@ -449,7 +448,7 @@ function updateHeartRateChart(measurements, labels) {
 
                     title: {
                         display: true,
-                        text: "Frequência cardíaca (bpm)"
+                        text: "Heart Rate (bpm)"
                     }
 
                 },
@@ -458,7 +457,7 @@ function updateHeartRateChart(measurements, labels) {
 
                     title: {
                         display: true,
-                        text: "Data e horário"
+                        text: "Date and Time"
                     }
 
                 }
@@ -473,7 +472,7 @@ function updateHeartRateChart(measurements, labels) {
 
 
 // ==========================================
-// INICIALIZAÇÃO
+// INITIALIZATION
 // ==========================================
 
 document.addEventListener("DOMContentLoaded", function () {
